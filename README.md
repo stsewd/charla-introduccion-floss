@@ -1,7 +1,8 @@
-# Cómo obtuve trabajo remoto gracias a la comunidad de Python (y cómo tú también puedes hacerlo)
+# Introducción al software libre y de código abierto
 
-Charla relámpago con la temática: Python en Ecuador.
-Charla dada en el [meetup de Python Ecuador](https://www.meetup.com/es/python-ecuador/events/253932934/).
+Slides de la charla sobre software libre y de código abierto.
+Charla dada en el [Hacktoberfest](https://www.meetup.com/es/python-ecuador/events/254871518/)
+realizado por la comunidad de Python Ecuador.
 
 ## Dependencias
 
