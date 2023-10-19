@@ -119,8 +119,11 @@
           <h3><strike>Pierdo mi autoría</strike></h3>
           <p>
             El software libre es distribuido bajo una licencia, con el
-            fin de mantener las libertades (también puede ser distribuido
-            al dominio público).
+            fin de mantener las libertades.
+          </p>
+          <p>
+            El nombre del autor es usualmente incluido en el software.
+            Y esta debe ser incluida en cualquier modificación.
           </p>
         </section>
         <section>
@@ -191,6 +194,293 @@
             <li>Privacidad y seguridad.</li>
           </ul>
         </section>
+      </section>
+
+      <section>
+        <h2>
+          Explorando un proyecto FLOSS
+        </h2>
+
+        <aside class="notes">
+          Ya vimos que es FLOSS, ahora vamos a entrar un poco más en detalle
+          sobre cómo luce un proyecto FLOSS, de donde nacen, como se organizan,
+          etc.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Hosting</h2>
+
+        <img src="img/github-gitlab.jpg" alt="GitHub and GitLab logos">
+
+        <aside class="notes">
+          Probablemente su primer acercamiento a un proyecto FLOSS habrá sido a través de estas plataformas.
+          Estas plataformas nos permiten alojar nuestro proyecto en Internet,
+          permitiendo que otras personas puedan acceder a él.
+
+          GitHub o GitLab son las opciones más populares, pero no son las únicas.
+
+          Incluyen soporte para issues y pull requests,
+          y muchas otras cosas más que nos ayudarán a mantener nuestro proyecto,
+          e interactuar con otros usuarios de una manera más sencilla.
+
+          Antes el código era compartido a través de listas de correo,
+          pero ahora es más común que se haga a través de estas plataformas.
+        </aside>
+      </section>
+
+      <section>
+        <h2>
+          Documentación
+        </h2>
+
+        <p>
+          <code>
+          README.md
+        </code>
+        </p>
+        <p>
+          <code>
+          docs/
+        </code>
+        </p>
+
+        <aside class="notes">
+          Probablemente lo primero que veremos al entrar a un proyecto,
+          es su README.
+          Este archivo nos dará una idea de lo que hace el proyecto,
+          links de interés, como instalarlo, como contribuir, etc.
+
+          Un proyecto pueda que tenga un simple README,
+          o si es un proyecto más grande, puede que tenga una documentación más extensa.
+
+          La cual la podrán leer desde la web, o offline como un man page.
+
+          El .md es una extensión de Markdown, un lenguaje de marcado
+          en texto plano, que nos permite darle formato a nuestro texto
+          de manera sencilla. Es un formato muy popular en la web,
+          GitHub y GitLab soportan este formato.
+          Existen otros como reStructuredText o Asciidoc.
+        </aside>
+      </section>
+
+      <section>
+        <h2>
+          Licencia
+        </h2>
+
+        <section>
+          <p>
+            Reglas y acuerdos que las personas que usen, modifiquen, y distribuyan tu proyecto deben seguir.
+          </p>
+          <p>
+            <code>
+            LICENSE
+          </code>
+          </p>
+
+          <aside class="notes">
+            Licencia, es un documento muy importante,
+            es el fundamento de un proyecto FLOSS.
+
+            Usualmente se encuentra en un archivo llamado LICENSE.
+          </aside>
+
+        </section>
+
+        <section>
+          <ul>
+            <li>GPL, AGPL, LGPL</li>
+            <li>MIT</li>
+            <li>Apache</li>
+            <li>Creative Commons</li>
+          </ul>
+
+          <aside class="notes">
+            La licencia que tenga el proyecto va a depender de los objetivos y las necesidades del proyecto.
+            Unas opciones populares son la familia de las licencias GPL,
+            o una licencia más permisiva como MIT o Apache.
+            Y hasta pueden encontrarse con licencias Creative Commons
+            para proyectos que no sean código.
+          </aside>
+        </section>
+      </section>
+
+      <section>
+        <h2>Issues</h2>
+
+        <img src="img/issues.png" alt="Issues">
+
+        <aside class="notes">
+          Los issues son una herramienta muy útil para mantener un proyecto.
+          Nos permiten llevar un registro de las tareas que se deben hacer,
+          y de los errores que se encuentren, discutir posibles mejoras,
+          soluciones a problemas.
+
+          GitHub y GitLab tienen una pestaña dedicada a issues.
+          Otros proyectos pueden que usen otra plataforma para manejar sus issues.
+
+          Los issues son públicos,
+          usualmente cualquier persona puede abrir un issue,
+          o comentar en uno existente.
+
+          Alguien aquí ha creado un issue o comentado en uno de un proyecto FLOSS?
+          Cuando creen un issue, traten de ser lo más específicos posibles,
+          y si es posible, incluyan un ejemplo de como reproducir el problema.
+          Ayuda mucho a no hacer perder el tiempo a los mantenedores del proyecto.
+
+          Cuando un problema es resuelto, usualmente se cierra el issue.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Pull Requests</h2>
+
+        <small>
+          <a href="https://github.com/stsewd/isort.nvim/pull/15">
+            https://github.com/stsewd/isort.nvim/pull/15
+          </a>
+        </small>
+
+        <img src="img/pull-request.png" alt="Pull Request">
+
+        <aside class="notes">
+          Los pull requests son una herramienta muy útil para colaborar con un proyecto.
+          Nos permiten enviar cambios al proyecto, y que los mantenedores del proyecto
+          puedan revisarlos, y aceptarlos o rechazarlos.
+
+          GitHub y GitLab tienen una pestaña dedicada a pull requests.
+          Otros proyectos pueden que usen otra plataforma para manejar sus pull requests,
+          incluso usar email para intercambiar parches.
+
+          Los pull requests son públicos,
+          usualmente cualquier persona puede abrir un pull request,
+          o comentar en uno existente.
+
+          Un pull request va a pasar por varias etapas,
+          desde que se abre, hasta que es aceptado o rechazado.
+          Usualmente un maintainer del proyecto va a revisar el pull request,
+          hacer sugerencias, y pedir cambios, y eventualmente aceptarlo o rechazarlo.
+
+          Alguien aquí ha creado un pull request o comentado o revisado uno de un proyecto FLOSS?
+        </aside>
+      </section>
+
+      <section>
+        <h2>Maintainers</h2>
+
+        <section>
+          <ul>
+            <li>
+              Responder preguntas
+            </li>
+            <li>
+              Solucionar problemas
+            </li>
+            <li>
+              Tomar decisiones
+            </li>
+            <li>
+              Code review
+            </li>
+            <li>
+              Aceptar pull requests
+            </li>
+          </ul>
+        </section>
+
+        <aside class="notes">
+          Estas son las tareas principales de un maintainer.
+          Puede consumir mucho tiempo, y puede llegar a ser frustrante.
+          La mayoría de los proyectos FLOSS son mantenidos por voluntarios.
+        </aside>
+
+        <section>
+
+          <p>No están obligados a hacer nada de esto</p>
+          <ul>
+            <li>
+              <s>Responder preguntas</s>
+            </li>
+            <li>
+              <s>Solucionar problemas</s>
+            </li>
+            <li>
+              <s>Tomar decisiones</s>
+            </li>
+            <li>
+              <s>Code review</s>
+            </li>
+            <li>
+              <s>Aceptar pull requests</s>
+            </li>
+          </ul>
+          <aside class="notes">
+            Recuerda, los maintainers son personas, y no tienen la obligación
+            de hacer nada de esto.
+
+            Simpre que interactues en un proyecto,
+            trata de hacerle la vida más fácil a los maintainers.
+
+            Lee la documentación, lee issues y pull requests anteriores.
+          </aside>
+        </section>
+      </section>
+
+      <section>
+        <h2>Código de Conducta</h2>
+
+        <p>
+          Reglas que los usuarios deben seguir
+          cuando interactúan con el proyecto o contribuyen a él.
+        </p>
+
+        <p>
+          <code>
+          CODE_OF_CONDUCT.md
+        </code>
+        </p>
+
+        <aside class="notes">
+          Hemos visto varias maneras de interactuar con un proyecto,
+          issues, pull requests. Existen otras maneras de interactuar con un proyecto,
+          como un canal dedicado como un chat, o un foro.
+
+          Siempre que interactues con un proyecto,
+          asegurate de seguir su código de conducta.
+
+          Básicamente se amable y respetuoso con los demás.
+          Es muy fácil olvidar que del otro lado hay una persona.
+        </aside>
+      </section>
+
+      <section>
+        <h2>Contribuyendo a un proyecto FLOSS</h2>
+        <p>
+        <ul>
+          <li>
+            Reportando errores
+          </li>
+          <li>
+            Sugiriendo mejoras
+          </li>
+          <li>
+            Escribiendo código
+          </li>
+          <li>
+            Respondiendo preguntas
+          </li>
+          <li>
+            Haciendo reviews
+          </li>
+          <li>
+            Documentación y traducciones
+          </li>
+          <li>
+            Donaciones
+          </li>
+        </ul>
+        </p>
       </section>
 
       <section>
@@ -282,16 +572,28 @@
             <a href="https://opensource.guide/">
               Guías de Código Abierto
             </a>
+            <br>
+            <small>
+              https://opensource.guide/
+            </small>
           </li>
           <li>
             <a href="https://opensource.org/">
               Open Source Initiative
             </a>
+            <br>
+            <small>
+              https://opensource.org/
+            </small>
           </li>
           <li>
             <a href="https://www.fsf.org/">
               Free Software Foundation
             </a>
+            <br>
+            <small>
+              https://www.fsf.org/
+            </small>
           </li>
         </ul>
         <footer class="fragment">
